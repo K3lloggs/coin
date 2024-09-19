@@ -10,7 +10,7 @@ body {
   .coin_tracker {
     max-width: 1000px;
     margin: 50px auto; /* Centered and with some top margin */
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
     background-color: #1f1f1f; /* Slightly lighter dark background */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
@@ -41,7 +41,7 @@ body {
   }
   
   .coin_container {
-    margin: 10px 0;
+    margin: 10px ;
     padding: 20px;
     border-radius: 8px;
     background-color: #1e1e1e; /* Slightly lighter than main background */
@@ -80,9 +80,15 @@ body {
     color: #ffffff;
   }
   
+  a:link, a:visited {
+    color: inherit;
+    text-decoration: none;
+    }
+
   .coin.symbol {
     text-transform: uppercase;
     color: #b0b0b0; /* Muted color for symbols */
+    text-decoration: none; /* Ensures no underline */
   }
   
   .coin_data {

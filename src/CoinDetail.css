@@ -1,0 +1,212 @@
+/* CoinDetail.css */
+
+/* Global styles (if not already included in a global CSS file) */
+body {
+    background-color: #121212;
+    /* Dark background */
+    color: #e0e0e0;
+    /* Light grey text for readability */
+    font-family: 'Arial', sans-serif;
+    /* Clean and simple font */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the coin detail page */
+.coin_detail {
+
+    max-width: 1000px;
+    margin: 50px auto;
+    /* Centered and with some top margin */
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #1f1f1f;
+    /* Slightly lighter dark background */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow for depth */
+}
+
+/* Back link styling */
+.back_link {
+    text-decoration: none;
+    color: #fbe4ff;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+/* Header section with coin image and name */
+.detail_header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.detail_header img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.detail_header h1 {
+    font-size: 1.2rem;
+    color: #fbe3fa;
+}
+
+/* Chart container */
+.chart_container {
+    margin-top: 40px;
+}
+
+.chart_container h2 {
+
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.chart_container p {
+    color: #e0e0e0;
+}
+
+/* Market data section */
+.market_data p {
+    font-size: 1.1rem;
+    text-align: right;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #2b2b2b;
+    /* Slightly darker background for contrast */
+    border-radius: 6px;
+    color: #e0e0e0;
+}
+
+.market_data p span {
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.market_data p {
+    font-size: 1.1rem;
+    text-align: right;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #2b2b2b;
+    /* Slightly darker background for contrast */
+    border-radius: 6px;
+    color: #efecf0;
+}
+
+.time_interval_buttons {
+    display: flex;
+    justify-content: center;
+    /* Center the buttons horizontally */
+    margin-bottom: 20px;
+}
+
+/* Styling for each button */
+.time_interval_buttons button {
+    margin: 0 5px;
+    /* Space between buttons */
+    padding: 10px 15px;
+    background-color: #2e2e2e;
+    /* Dark background */
+    color: #e0e0e0;
+    /* Light text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+/* Styling for the active (selected) button */
+.time_interval_buttons button.active {
+    background-color: #e592f9;
+    color: #ffffff;
+    /* White text color */
+}
+
+/* Hover effect */
+.time_interval_buttons button:hover {
+    background-color: #f883d5;
+    /* Slightly lighter on hover */
+}
+
+/* Focus outline removal for accessibility */
+.time_interval_buttons button:focus {
+    outline: none;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .time_interval_buttons {
+        flex-wrap: wrap;
+        /* Allow buttons to wrap to next line */
+    }
+
+    .time_interval_buttons button {
+        margin: 5px 5px;
+        /* Adjust margins for smaller screens */
+        flex: 1 1 calc(50% - 10px);
+        /* Two buttons per row */
+    }
+}
+
+/* Styling for positive and negative percentage changes */
+.coin_percent_red {
+    color: #ff4c4c;
+    /* Red for negative percentage */
+}
+
+.coin_percent_green {
+    color: #4caf50;
+    /* Green for positive percentage */
+}
+
+.custom_tooltip {
+    background-color: rgba(31, 31, 31, 0.9);
+    /* Slightly transparent background */
+    border: .5px solid #e592f9;
+    /* Border color to match your theme */
+    border-radius: 6px;
+    padding: 8px;
+    color: #e0e0e0;
+    /* Text color for readability */
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.custom_tooltip .label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fbe3fa;
+    /* Match heading color */
+}
+
+.custom_tooltip .price {
+    color: #fceefd;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .detail_header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .detail_header img {
+        margin-bottom: 10px;
+    }
+
+    .chart_container,
+    .market_data {
+        margin-top: 20px;
+    }
+}
